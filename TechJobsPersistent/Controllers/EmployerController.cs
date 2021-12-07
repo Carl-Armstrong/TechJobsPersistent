@@ -24,7 +24,7 @@ namespace TechJobsPersistent.Controllers
         public IActionResult Index()
         {
             List<Employer> employers = context.Employers.ToList();
-            return View();
+            return View(employers);
         }
 
         public IActionResult Add()
